@@ -6,8 +6,8 @@ display: block;
 background-color: ${({theme}) => theme.colors.primaryNoteItemColor};
 display: flex;
 flex-direction: column;
-padding: 1rem;
-margin: 0.2rem;
+padding: 3rem 1rem;
+margin:0.2rem;
 gap: 0.5rem;
 transition: all .3s ease 0s;
 
