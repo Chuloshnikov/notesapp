@@ -5,6 +5,7 @@ export const NoteLink = styled(Link)`
 background-color: ${({theme}) => theme.colors.primaryNoteItemColor};
 display: flex;
 flex-direction: column;
+border-radius: 0.5rem;
 padding: 3rem 1rem;
 margin: 0.2rem;
 gap: 0.5rem;

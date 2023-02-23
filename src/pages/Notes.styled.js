@@ -10,7 +10,7 @@ export const NotesHeader = styled.header`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     justify-content: space-between;
     color: ${({theme}) => theme.colors. primaryTextColor};
     /* text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00; */
@@ -25,7 +25,7 @@ export const NotesHeader = styled.header`
 
     input {
         background-color: ${({theme}) => theme.colors. primaryAppBackground};
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0.2rem;
         border-radius: 0.5rem;
         color: ${({theme}) => theme.colors. thirdTextColor};
         border: 2px solid ${({theme}) => theme.colors. thirdTextColor};
