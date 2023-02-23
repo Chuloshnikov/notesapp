@@ -18,7 +18,7 @@ html {
     display: none;
 }
 body {
-    background-color: ${({theme}) => theme.colors.pageBackground};
+    background-color: ${({theme}) => theme.colors.primaryAppBackground};
     color: ${({theme}) => theme.colors.secondaryTextColor};
     margin: 0;
     font-family: 'Rubik', sans-serif;

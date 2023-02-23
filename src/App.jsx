@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppWrapper, Main } from './App.styled';
 import { GlobalStyle } from './GlobalStyle';
@@ -6,13 +6,18 @@ import CreateNote from './pages/CreateNote';
 import EditNote from './pages/EditNote';
 import Notes from './pages/Notes';
 
+import notes from './data/data';
+
 const App = () => {
+
+  const [notes, setNotes] = useState(notes);
+
   return (
     <Main id="app">
     <AppWrapper>
       <BrowserRouter>
           <Routes>
-              <Route path="/" element={<Notes/>}/>
+              <Route path="/" element={<Notes notes={notes} />}/>
               <Route path="/create-node" element={<CreateNote/>}/>
               <Route path="/edit-note/:id" element={<EditNote/>}/>
           </Routes>

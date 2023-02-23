@@ -4,9 +4,9 @@ import { CiSearch } from 'react-icons/ci';
 import { BsPlusLg } from 'react-icons/bs';
 import NodesItem from '../components/NodesItem';
 
-import notes from '../data/data';
 
-const Notes = () => {
+
+const Notes = ({ notes }) => {
   return (
     <Section>
       <NotesHeader>
