@@ -34,7 +34,13 @@ const EditNote = ({ notes, setNotes}) => {
 
     //redirect to homepage
     navigate('/');
+  };
 
+
+  const handleDelete = () => {
+    const newNotes = notes.filter((item) => item.id != id);
+    setNotes(newNotes);
+    navigate('/');
   }
 
   return (
@@ -42,7 +48,7 @@ const EditNote = ({ notes, setNotes}) => {
       <EditNoteHeader>
         <BackLink to="/"><IoIosArrowBack/></BackLink>
         <SaveButton onClick={handleForm}>Save</SaveButton>
-        <DeleteButton><RiDeleteBin6Line/></DeleteButton>
+        <DeleteButton onClick={handleDelete}><RiDeleteBin6Line/></DeleteButton>
       </EditNoteHeader>
       <form onSubmit={handleForm}>
           <input type="text" 

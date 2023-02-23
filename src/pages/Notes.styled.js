@@ -51,7 +51,14 @@ export const NotesContainer = styled.div`
 `;
 
 export const AddLink = styled(Link)`
-
+    background-color: ${({theme}) => theme.colors. thirdTextColor};
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    
+    svg {
+        font-size: 1.2rem;
+        color: ${({theme}) => theme.colors. primaryTextColor};
+    }
 
 
 `
