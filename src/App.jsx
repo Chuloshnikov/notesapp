@@ -6,11 +6,13 @@ import CreateNote from './pages/CreateNote';
 import EditNote from './pages/EditNote';
 import Notes from './pages/Notes';
 
-import notes from './data/data';
+//import notes from './data/data';
 
 const App = () => {
 
-  const [notes, setNotes] = useState(notes);
+  const [notes, setNotes] = useState([]);
+  console.log(notes);
+  
 
   return (
     <Main id="app">
@@ -18,7 +20,7 @@ const App = () => {
       <BrowserRouter>
           <Routes>
               <Route path="/" element={<Notes notes={notes} />}/>
-              <Route path="/create-node" element={<CreateNote/>}/>
+              <Route path="/create-node" element={<CreateNote setNotes={setNotes}/>}/>
               <Route path="/edit-note/:id" element={<EditNote/>}/>
           </Routes>
       </BrowserRouter>

@@ -5,6 +5,7 @@ export const Section = styled.section`
     width: max-content;
     display: flex;
     flex-direction: column;
+    
 
     form {
         display: flex;
@@ -17,14 +18,16 @@ export const Section = styled.section`
         padding: 1rem;
         border: 2px solid ${({theme}) => theme.colors. thirdTextColor};
         border-radius: 0.5rem;
+        color: ${({theme}) => theme.colors.thirdTextColor};
     }
 
     textarea {
         background-color: ${({theme}) => theme.colors. primaryAppBackground};
         resize: none;
-        border: 2px solid ${({theme}) => theme.colors. thirdTextColor};
+        border: 2px solid ${({theme}) => theme.colors.thirdTextColor};
         border-radius: 0.5rem;
         padding: 1rem;
+        color: ${({theme}) => theme.colors.thirdTextColor};
     }
 
 `;
@@ -33,9 +36,10 @@ export const Section = styled.section`
 export const CreateNodeHeader = styled.header`
     display: flex;
     justify-content: space-between;
-    gap: 15rem;
+    flex-grow: 1;
     align-items: center;
     padding: 2rem 4rem;
+    
 
 
 
