@@ -61,4 +61,13 @@ export const AddLink = styled(Link)`
     }
 
 
+`;
+
+
+export const EmptyNotes = styled.p`
+color: ${({theme}) => theme.colors. primaryTextColor};
+position: relative;
+top: 50%;
+left: 63%;
+
 `
