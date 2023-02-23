@@ -46,14 +46,8 @@ export const Btn = styled.button`
 
 export const NotesContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     margin: 5px 10px;
-
-    @media screen and (max-width:${({theme}) => theme.layout.tablet}){
-        grid-template-columns: repeat(1, 1fr);
-        overflow: scroll;
-    }
-
 `;
 
 export const AddLink = styled(Link)`

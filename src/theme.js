@@ -3,7 +3,7 @@ export const theme = {
       primaryTextColor: '#E8E8E0',
       secondaryTextColor: '#191919',
       thirdTextColor: '#75756F',
-      primaryNoteItemColor: '#F0AF22',
+      primaryNoteItemColor: '#2AA49F',
       secondaryNoteItemColor: '#4D4B4B',
       accentHoverColor: '#8C6000',
       pageBackground: '#CCCCCC',
