@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AppWrapper, Main } from './App.styled';
 import { GlobalStyle } from './GlobalStyle';
@@ -11,8 +11,11 @@ import Notes from './pages/Notes';
 const App = () => {
 
   const [notes, setNotes] = useState([]);
-  console.log(notes);
   
+  useEffect(() => {
+    //notes to Local Storage
+      localStorage.setItem('notes', JSON.stringify(notes))
+  }, [notes])
 
   return (
     <Main id="app">
