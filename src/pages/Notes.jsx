@@ -21,7 +21,7 @@ const Notes = ({ notes }) => {
           </NodesItem>
         ))}
       </NotesContainer>
-      <AddLink><BsPlusLg/></AddLink>
+      <AddLink to="/create-note"><BsPlusLg/></AddLink>
     </Section>
   )
 }
