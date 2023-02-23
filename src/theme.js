@@ -9,7 +9,7 @@ export const theme = {
       pageBackground: '#CCCCCC',
       primaryAppBackground: '#111111',
       secondaryAppBackground: '',
-      aboutIconColor: '#F04422',
+      deleteColor: '#F04422',
       borderButtonColor: '#4D4B4B',
       primaryBackgroundColor: '#191919',
       primaryBackgroundButton: '#FEFEFEF5',

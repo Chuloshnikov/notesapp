@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Section, CreateNodeHeader, LinkBtn, SaveBtn } from './CreateNode.styled';
+import { Section, CreateNodeHeader, BackBtn, SaveBtn } from './CreateNode.styled';
 import { IoIosArrowBack } from "react-icons/io";
 import {v4 as uuid} from 'uuid';
 
@@ -29,7 +29,7 @@ const CreateNote = ({ setNotes }) => {
   return (
     <Section>
       <CreateNodeHeader>
-        <LinkBtn to="/"><IoIosArrowBack/></LinkBtn>
+        <BackBtn to="/"><IoIosArrowBack/></BackBtn>
         <SaveBtn onClick={handleSubmit}>Save</SaveBtn>
       </CreateNodeHeader>
         <form onSubmit={handleSubmit}>
