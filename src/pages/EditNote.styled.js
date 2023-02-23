@@ -5,7 +5,7 @@ export const Section = styled.section`
     width: max-content;
     display: flex;
     flex-direction: column;
-    
+
 
     form {
         display: flex;
@@ -32,33 +32,34 @@ export const Section = styled.section`
 
 `;
 
-
-export const CreateNodeHeader = styled.header`
+export const EditNoteHeader = styled.header`
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
     align-items: center;
     padding: 2rem 0.2rem;
-    
 
+`;
+
+export const BackLink = styled(Link)`
+    padding: 0.5rem 0.8rem;
+    background-color: ${({theme}) => theme.colors. thirdTextColor};
+    border-radius: 0.5rem;
+    align-self: flex-start;
 
 
 `;
 
-export const BackBtn = styled(Link)`
-padding: 0.5rem 0.8rem;
-background-color: ${({theme}) => theme.colors. thirdTextColor};
-border-radius: 0.5rem;
-align-self: flex-start;
-
+export const SaveButton = styled.button`
+    background-color: ${({theme}) => theme.colors.primaryNoteItemColor};
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    align-self: center;
 `;
 
-
-export const SaveBtn = styled.button`
-background-color: ${({theme}) => theme.colors.primaryNoteItemColor};
-padding: 0.5rem 1rem;
-border-radius: 0.5rem;
-align-self: flex-end;
-
-
+export const DeleteButton = styled.button`
+    padding: 0.5rem 0.8rem;
+    background-color: ${({theme}) => theme.colors. deleteColor};
+    border-radius: 0.5rem;
+    align-self: flex-end;
 `;
